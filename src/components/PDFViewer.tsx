@@ -472,7 +472,15 @@ export default function PDFViewer() {
     <div className="bg-white font-sans min-h-screen flex flex-col">
       <header className="bg-[#323639] shadow-md p-5 text-white">
         <h1 className="text-inherit m-0">PDF Spaced Repetition</h1>
-        <div className="mb-4 flex gap-2 items-center">
+        <div style={{
+          marginTop: '1em',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexFlow: 'row nowrap',
+          gap: '20px'
+        }} className="mb-4">
           <button onClick={zoomOut} className="bg-blue-500 text-white px-4 py-2 rounded">Zoom Out</button>
           <button onClick={zoomIn} className="bg-blue-500 text-white px-4 py-2 rounded">Zoom In</button>
           <button onClick={fitToScreen} className="bg-green-500 text-white px-4 py-2 rounded">Fit to Screen</button>
